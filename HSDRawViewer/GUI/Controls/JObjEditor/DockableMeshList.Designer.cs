@@ -43,6 +43,7 @@
             this.massTextureEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addDummyDOBJToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearSelectedPOBJsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createOutlineMeshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,7 +162,8 @@
             this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.massTextureEditorToolStripMenuItem,
             this.addDummyDOBJToolStripMenuItem,
-            this.clearSelectedPOBJsToolStripMenuItem});
+            this.clearSelectedPOBJsToolStripMenuItem,
+            this.createOutlineMeshToolStripMenuItem});
             this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
             this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
@@ -189,6 +191,13 @@
             this.clearSelectedPOBJsToolStripMenuItem.Text = "Delete Selected Polygons";
             this.clearSelectedPOBJsToolStripMenuItem.Click += new System.EventHandler(this.clearSelectedPOBJsToolStripMenuItem_Click);
             // 
+            // createOutlineMeshToolStripMenuItem
+            // 
+            this.createOutlineMeshToolStripMenuItem.Name = "createOutlineMeshToolStripMenuItem";
+            this.createOutlineMeshToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.createOutlineMeshToolStripMenuItem.Text = "Generate Outline Mesh";
+            this.createOutlineMeshToolStripMenuItem.Click += new System.EventHandler(this.createOutlineMeshToolStripMenuItem_Click);
+            // 
             // DockableMeshList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -211,6 +220,7 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
         private System.Windows.Forms.ToolStripMenuItem addDummyDOBJToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearSelectedPOBJsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createOutlineMeshToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton materialDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;

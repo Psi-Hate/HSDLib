@@ -445,6 +445,27 @@ namespace HSDRawViewer.GUI.Controls.JObjEditor
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        private void createOutlineMeshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HSD_JOBJ parent = _root;
+            foreach (DObjProxy v in listDOBJ.SelectedItems)
+            {
+                var dobj = OutlineGenerator.GenerateOutlineMesh(v.DOBJ);
+
+                if (dobj != null)
+                {
+                    parent.Dobj.Add(dobj);
+                }
+            }
+            SetJObj(_root);
+            ListUpdated();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void importToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (listDOBJ.SelectedIndices.Count > 0)
